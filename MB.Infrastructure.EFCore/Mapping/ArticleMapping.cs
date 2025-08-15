@@ -5,18 +5,18 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace MB.Infrastructure.EFCore.Mapping
 {
-    public class ArticleMapping : IEntityTypeConfiguration<Article>
+    public class ArticleMapping : IEntityTypeConfiguration<Articles>
     {
-        public void Configure(EntityTypeBuilder<Article> builder)
+        public void Configure(EntityTypeBuilder<Articles> builder)
         {
-            builder.ToTable("Article");
+            builder.ToTable("Articles");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Title);
             builder.Property(x => x.ShortDescription);
             builder.Property(x => x.Image);
             builder.Property(x => x.Content);
             builder.Property(x => x.CreationDate);
-            builder.Property(x => x.IsDelete);
+            builder.Property(x => x.IsDeleted);
             builder.HasOne(x=>x.ArticleCategory).WithMany(x=>x.Article).HasForeignKey(x=>x.ArticleCategoryId);
 
         }

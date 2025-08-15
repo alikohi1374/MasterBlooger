@@ -16,3 +16,5 @@ E:\MasterBloger\MasterBloger\MB.Infrastructure.EFCore\obj\Debug\net5.0\MB.Infras
 E:\MasterBloger\MasterBloger\MB.Infrastructure.EFCore\obj\Debug\net5.0\ref\MB.Infrastructure.EFCore.dll
 E:\MasterBloger\MasterBloger\MB.Infrastructure.EFCore\obj\Debug\net5.0\MB.Infrastructure.EFCore.pdb
 E:\MasterBloger\MasterBloger\MB.Infrastructure.EFCore\obj\Debug\net5.0\MB.Infrastructure.EFCore.genruntimeconfig.cache
+E:\MasterBloger\MasterBloger\MB.Infrastructure.EFCore\bin\Debug\net5.0\MB.Application.Contracts.dll
+E:\MasterBloger\MasterBloger\MB.Infrastructure.EFCore\bin\Debug\net5.0\MB.Application.Contracts.pdb

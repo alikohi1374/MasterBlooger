@@ -10,3 +10,6 @@ E:\MasterBloger\MasterBloger\MB.Domain\obj\Debug\net5.0\MB.Domain.csproj.CoreCom
 E:\MasterBloger\MasterBloger\MB.Domain\obj\Debug\net5.0\MB.Domain.dll
 E:\MasterBloger\MasterBloger\MB.Domain\obj\Debug\net5.0\ref\MB.Domain.dll
 E:\MasterBloger\MasterBloger\MB.Domain\obj\Debug\net5.0\MB.Domain.pdb
+E:\MasterBloger\MasterBloger\MB.Domain\bin\Debug\net5.0\MB.Application.Contracts.dll
+E:\MasterBloger\MasterBloger\MB.Domain\bin\Debug\net5.0\MB.Application.Contracts.pdb
+E:\MasterBloger\MasterBloger\MB.Domain\obj\Debug\net5.0\MB.Domain.csproj.CopyComplete
