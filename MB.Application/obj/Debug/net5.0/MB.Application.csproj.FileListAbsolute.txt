@@ -1,0 +1,17 @@
+E:\MasterBloger\MasterBloger\MB.Application\bin\Debug\net5.0\MB.Application.deps.json
+E:\MasterBloger\MasterBloger\MB.Application\bin\Debug\net5.0\MB.Application.dll
+E:\MasterBloger\MasterBloger\MB.Application\bin\Debug\net5.0\ref\MB.Application.dll
+E:\MasterBloger\MasterBloger\MB.Application\bin\Debug\net5.0\MB.Application.pdb
+E:\MasterBloger\MasterBloger\MB.Application\bin\Debug\net5.0\MB.Application.Contracts.dll
+E:\MasterBloger\MasterBloger\MB.Application\bin\Debug\net5.0\MB.Domain.dll
+E:\MasterBloger\MasterBloger\MB.Application\bin\Debug\net5.0\MB.Application.Contracts.pdb
+E:\MasterBloger\MasterBloger\MB.Application\bin\Debug\net5.0\MB.Domain.pdb
+E:\MasterBloger\MasterBloger\MB.Application\obj\Debug\net5.0\MB.Application.csproj.AssemblyReference.cache
+E:\MasterBloger\MasterBloger\MB.Application\obj\Debug\net5.0\MB.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\MasterBloger\MasterBloger\MB.Application\obj\Debug\net5.0\MB.Application.AssemblyInfoInputs.cache
+E:\MasterBloger\MasterBloger\MB.Application\obj\Debug\net5.0\MB.Application.AssemblyInfo.cs
+E:\MasterBloger\MasterBloger\MB.Application\obj\Debug\net5.0\MB.Application.csproj.CoreCompileInputs.cache
+E:\MasterBloger\MasterBloger\MB.Application\obj\Debug\net5.0\MB.Application.csproj.CopyComplete
+E:\MasterBloger\MasterBloger\MB.Application\obj\Debug\net5.0\MB.Application.dll
+E:\MasterBloger\MasterBloger\MB.Application\obj\Debug\net5.0\ref\MB.Application.dll
+E:\MasterBloger\MasterBloger\MB.Application\obj\Debug\net5.0\MB.Application.pdb
