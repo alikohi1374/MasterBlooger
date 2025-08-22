@@ -48,5 +48,19 @@ namespace MB.Application
             };
 
         }
+
+        public void Remove(long id)
+        {
+            var articles = _articleRepository.Get(id);
+            articles.Remove();
+            _articleRepository.Save();
+        }
+
+        public void Activate(long id)
+        {
+            var articles = _articleRepository.Get(id);
+            articles.Activate();
+            _articleRepository.Save();
+        }
     }
 }

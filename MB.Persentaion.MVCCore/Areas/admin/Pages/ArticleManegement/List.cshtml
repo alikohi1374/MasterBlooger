@@ -43,7 +43,7 @@
                             <a class="btn btn-warning float-left mr-3" asp-page="./Edit" asp-route-id="@article.Id">Edit</a>
                             @if (article.IsDelete)
                             {
-                                <form method="post" asp-page-handler="Activete" class="float-left">
+                                <form method="post" asp-page-handler="Activate" class="float-left">
                                     <button class="btn badge-success">Activate</button>
                                     <input type="hidden" name="Id" value="@article.Id" />
                                 </form>
