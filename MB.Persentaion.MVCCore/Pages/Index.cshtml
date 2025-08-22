@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
 
-            @*@foreach (var article in Model.Articless)
+            @foreach (var article in Model.Articles)
             {
                 <div class="post col-xl-6">
                     <div class="post-thumbnail">
@@ -18,9 +18,9 @@
                     </div>
                     <div class="post-details">
                         <div class="post-meta d-flex justify-content-between">
-                            <div class="date meta-last">@article.CreationDate</div>
+                            <div class="date meta-last">@article.CreateDate</div>
                             <div class="category">
-                                <a asp-page="/ArticlesDetails" asp-route-id="@article.Id">@article.ArticlesCategory</a>
+                                <a asp-page="/ArticlesDetails" asp-route-id="@article.Id">12</a>
                             </div>
                         </div>
                         <a asp-page="/ArticlesDetails" asp-route-id="@article.Id">
@@ -30,11 +30,11 @@
                             @article.ShortDescription
                         </p>
                         <footer class="post-footer d-flex align-items-center">
-                            <div class="comments meta-last"><i class="icon-comment"></i>@article.CommentsCount</div>
+                            <div class="comments meta-last"><i class="icon-comment"></i>12</div>
                         </footer>
                     </div>
                 </div>
-            }*@
+            }
 
         </div>
     </div>

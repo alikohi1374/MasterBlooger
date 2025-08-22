@@ -10,6 +10,7 @@
         "dependencies": {
           "MB.Application": "1.0.0",
           "MB.Application.Contracts": "1.0.0",
+          "MB.Infrastracture.Query": "1.0.0",
           "MB.Infrastructure.EFCore": "1.0.0",
           "System.Configuration.ConfigurationManager": "9.0.8"
         },
@@ -983,6 +984,14 @@
           "MB.Domain.dll": {}
         }
       },
+      "MB.Infrastracture.Query/1.0.0": {
+        "dependencies": {
+          "MB.Infrastructure.EFCore": "1.0.0"
+        },
+        "runtime": {
+          "MB.Infrastracture.Query.dll": {}
+        }
+      },
       "MB.Infrastructure.EFCore/1.0.0": {
         "dependencies": {
           "MB.Domain": "1.0.0",
@@ -1649,6 +1658,11 @@
       "sha512": ""
     },
     "MB.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MB.Infrastracture.Query/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

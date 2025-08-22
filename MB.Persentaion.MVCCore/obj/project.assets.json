@@ -1458,12 +1458,26 @@
           "bin/placeholder/MB.Domain.dll": {}
         }
       },
+      "MB.Infrastracture.Query/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MB.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MB.Infrastracture.Query.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MB.Infrastracture.Query.dll": {}
+        }
+      },
       "MB.Infrastructure.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "MB.Application": "1.0.0",
           "MB.Application.Contracts": "1.0.0",
+          "MB.Infrastracture.Query": "1.0.0",
           "MB.Infrastructure.EFCore": "1.0.0",
           "System.Configuration.ConfigurationManager": "9.0.8"
         },
@@ -5616,6 +5630,11 @@
       "type": "project",
       "path": "../MB.Domain/MB.Domain.csproj",
       "msbuildProject": "../MB.Domain/MB.Domain.csproj"
+    },
+    "MB.Infrastracture.Query/1.0.0": {
+      "type": "project",
+      "path": "../MB.Infrastracture.Query/MB.Infrastracture.Query.csproj",
+      "msbuildProject": "../MB.Infrastracture.Query/MB.Infrastracture.Query.csproj"
     },
     "MB.Infrastructure.Core/1.0.0": {
       "type": "project",

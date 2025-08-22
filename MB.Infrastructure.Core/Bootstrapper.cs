@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using MB.Application.Contracts.Article;
 using MB.Domain.ArticleAgg;
 using MB.Domain.ArticleAgg.Services;
+using MB.Infrastracture.Query;
 
 namespace MB.Infrastructure.Core
 {
@@ -23,6 +24,7 @@ namespace MB.Infrastructure.Core
             services.AddTransient<IArticleApplication, ArticleApplication>();
             services.AddTransient<IArticleRepository, ArticleRepository>();
             services.AddTransient<IArticleValidatorServices, ArticleValidatorServices>();
+            services.AddTransient<IArticleQuery,ArticleQuery>();
             services.AddDbContext<MasterBloggerDbContext>(options =>
                 options.UseSqlServer(connectionString));
         }

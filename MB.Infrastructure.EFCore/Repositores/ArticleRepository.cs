@@ -49,7 +49,7 @@ namespace MB.Infrastructure.EFCore.Repositores
 
       public bool Exist(string title)
       {
-          throw new DuplicatedRecordException("عنوان تکراری است");
+          return _context.Articles.Any(x => x.Title == title);
       }
   }
 }
