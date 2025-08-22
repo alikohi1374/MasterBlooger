@@ -29,7 +29,7 @@ namespace MB.Persentaion.MVCCore.Areas.admin.Pages.ArticleManegement
 
         public RedirectToPageResult Onpost(CreateArticle command)
         {
-            _articleApplication.Ctrate(command);
+            _articleApplication.Create(command);
             return RedirectToPage("./list");
 
         }
