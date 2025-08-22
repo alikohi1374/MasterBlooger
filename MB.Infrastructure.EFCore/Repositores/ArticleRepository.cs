@@ -29,5 +29,11 @@ namespace MB.Infrastructure.EFCore.Repositores
               IsDelete = x.IsDeleted
           }).ToList();
       }
+
+      public void CreateArticle(Articles entity)
+      {
+          _context.Articles.Add(entity);
+          _context.SaveChanges();
+      }
   }
 }

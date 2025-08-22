@@ -8,5 +8,6 @@ namespace MB.Domain.ArticleAgg
     public interface IArticleRepository
     {
         List<ArticleViewModel> GetList();
+        void CreateArticle(Articles entity);
     }
 }

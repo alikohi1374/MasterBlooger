@@ -1,0 +1,74 @@
+﻿@page
+@model MB.Persentaion.MVCCore.Areas.admin.Pages.ArticleManegement.CreateModel
+@{
+}
+<div class="container py-5">
+    <div class="card">
+        <div class="card-header">
+            <h2><i class="bi bi-plus-circle"></i> ایجاد مقاله جدید</h2>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <form method="post">
+                        <!-- خلاصه اعتبارسنجی -->
+
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="Title" class="control-label">عنوان:</label>
+                                    <input name="Title" id="Title" class="form-control" />
+                                    <div class="alert alert-danger mt-1" style="display: none;">لطفا عنوان مقاله را وارد کنید</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="ShortDescription" class="control-label">توضیح کوتاه:</label>
+                                    <textarea name="ShortDescription" id="ShortDescription" class="form-control" rows="3"></textarea>
+                                    <div class="alert alert-danger mt-1" style="display: none;">لطفا توضیح کوتاه را وارد کنید</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="Image" class="control-label">تصویر:</label>
+                                    <div class="input-group">
+                                        <input name="Image" id="Image" class="form-control" placeholder="آدرس تصویر" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="ArticleCategory" class="control-label">دسته‌بندی:</label>
+                                    <select asp-items="Model.ArticleCategories" name="ArticleCategoryId" id="ArticleCategoryId" class="form-control">
+                                        <option value="0">-- انتخاب دسته‌بندی --</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="Content" class="control-label">محتوای مقاله:</label>
+                                    <textarea name="Content" id="Content" class="form-control" rows="8"></textarea>
+                                    <div class="alert alert-danger mt-1" style="display: none;">لطفا محتوای مقاله را وارد کنید</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <button type="submit" value="Create" class="btn btn-success">
+                                <i class="bi bi-check-circle"></i> ایجاد مقاله
+                            </button>
+                            <a class="btn btn-dark" href="#">
+                                <i class="bi bi-arrow-right-circle"></i> بازگشت به لیست
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

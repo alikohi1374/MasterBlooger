@@ -86,3 +86,4 @@ E:\MasterBloger\MasterBloger\MB.Persentaion.MVCCore\obj\Debug\net5.0\Razor\Areas
 E:\MasterBloger\MasterBloger\MB.Persentaion.MVCCore\obj\Debug\net5.0\Razor\Areas\admin\Pages\ArticleCategoryManegement\Create.cshtml.g.cs
 E:\MasterBloger\MasterBloger\MB.Persentaion.MVCCore\obj\Debug\net5.0\Razor\Areas\admin\Pages\ArticleCategoryManegement\Edit.cshtml.g.cs
 E:\MasterBloger\MasterBloger\MB.Persentaion.MVCCore\obj\Debug\net5.0\Razor\Areas\admin\Pages\ArticleManegement\List.cshtml.g.cs
+E:\MasterBloger\MasterBloger\MB.Persentaion.MVCCore\obj\Debug\net5.0\Razor\Areas\admin\Pages\ArticleManegement\Create.cshtml.g.cs

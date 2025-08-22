@@ -18,5 +18,12 @@ namespace MB.Application
         {
             return _articleRepository.GetList();
         }
+
+        public void Ctrate(CreateArticle command)
+        {
+            var article = new Articles(command.Title, command.ShortDescription, command.Image, command.Content,
+                command.ArticleCategoryId);
+            _articleRepository.CreateArticle(article);
+        }
     }
 }
