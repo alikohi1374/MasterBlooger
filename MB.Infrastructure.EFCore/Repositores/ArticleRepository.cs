@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Linq;
 using MB.Application.Contracts.Article;
 using MB.Domain.ArticleAgg;
+using MB.Domain.ArticleCategoryAgg.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -44,6 +45,11 @@ namespace MB.Infrastructure.EFCore.Repositores
       public void Save()
       {
           _context.SaveChanges();
+      }
+
+      public bool Exist(string title)
+      {
+          throw new DuplicatedRecordException("عنوان تکراری است");
       }
   }
 }

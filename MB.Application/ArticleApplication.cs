@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MB.Application.Contracts.Article;
 using MB.Domain.ArticleAgg;
+using MB.Domain.ArticleAgg.Services;
 
 
 namespace MB.Application
@@ -8,10 +9,12 @@ namespace MB.Application
     public class ArticleApplication: IArticleApplication
     {
         private readonly IArticleRepository _articleRepository;
+        private readonly IArticleValidatorServices _articleValidator;
 
-        public ArticleApplication(IArticleRepository articleRepository)
+        public ArticleApplication(IArticleRepository articleRepository,IArticleValidatorServices articleValidatorServices)
         {
             _articleRepository = articleRepository;
+            _articleValidator = articleValidatorServices;
         }
 
         public List<ArticleViewModel> GetList()
@@ -22,7 +25,7 @@ namespace MB.Application
         public void Create(CreateArticle command)
         {
             var article = new Articles(command.Title, command.ShortDescription, command.Image, command.Content,
-                command.ArticleCategoryId);
+                command.ArticleCategoryId,_articleValidator);
             _articleRepository.CreateArticle(article);
         }
 
