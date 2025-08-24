@@ -90,3 +90,5 @@ E:\MasterBloger\MasterBloger\MB.Persentaion.MVCCore\obj\Debug\net5.0\Razor\Areas
 E:\MasterBloger\MasterBloger\MB.Persentaion.MVCCore\obj\Debug\net5.0\Razor\Areas\admin\Pages\ArticleManegement\Edit.cshtml.g.cs
 E:\MasterBloger\MasterBloger\MB.Persentaion.MVCCore\bin\Debug\net5.0\MB.Infrastracture.Query.dll
 E:\MasterBloger\MasterBloger\MB.Persentaion.MVCCore\bin\Debug\net5.0\MB.Infrastracture.Query.pdb
+E:\MasterBloger\MasterBloger\MB.Persentaion.MVCCore\obj\Debug\net5.0\Razor\Pages\ArticlesDetails.cshtml.g.cs
+E:\MasterBloger\MasterBloger\MB.Persentaion.MVCCore\obj\Debug\net5.0\Razor\Areas\admin\Pages\CommentManegement\List.cshtml.g.cs

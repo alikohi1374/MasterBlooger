@@ -18,7 +18,7 @@ namespace MB.Infrastructure.EFCore.Mapping
             builder.Property(x => x.CreationDate);
             builder.Property(x => x.IsDeleted);
             builder.HasOne(x=>x.ArticleCategory).WithMany(x=>x.Article).HasForeignKey(x=>x.ArticleCategoryId);
-
+            builder.HasMany(x => x.Comments).WithOne(x => x.Article).HasForeignKey(x => x.ArticleId);
         }
     }
 }

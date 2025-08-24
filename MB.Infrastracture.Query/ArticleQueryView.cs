@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using MB.Infrastracture.Query;
 
 namespace MB.Infrastructure.Query
 {
@@ -10,6 +12,9 @@ namespace MB.Infrastructure.Query
         public string ArticleCategory { get; set; }
         public string CreateDate { get; set; }
         public string Image { get; set; }
+        public string Content { get; set; }
+        public long CommentCount { get; set; }
+        public List<CommentQueryView> Comments { get; set; }
 
     }
 }

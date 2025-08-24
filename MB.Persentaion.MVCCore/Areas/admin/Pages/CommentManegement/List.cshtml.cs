@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using MB.Application.Contracts.Comment;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
+namespace MB.Persentaion.MVCCore.Areas.admin.Pages.CommentManegement
+{
+    public class ListModel : PageModel
+    {
+        public List<CommentViewModel> Comments { get; set; }
+        private readonly ICommentApplication _commentApplication;
+
+        public ListModel(ICommentApplication commentApplication)
+        {
+            _commentApplication = commentApplication;
+        }
+
+        public void OnGet()
+        {
+            Comments = _commentApplication.GetList();
+        }
+
+        public RedirectToPageResult OnPostConfirm(long id)
+        {
+            _commentApplication.Confirm(id);
+            return RedirectToPage("./list");
+        }
+        public RedirectToPageResult OnPostCancel(long id)
+        {
+            _commentApplication.Cancel(id);
+            return RedirectToPage("./list");
+        }
+    }
+}

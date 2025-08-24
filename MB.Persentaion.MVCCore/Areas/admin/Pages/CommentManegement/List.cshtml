@@ -1,0 +1,71 @@
+﻿@page
+@using MB.Domain.CommentAgg
+@model MB.Persentaion.MVCCore.Areas.admin.Pages.CommentManegement.ListModel
+@{
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="float-left">Comment List</h3>
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>نام</th>
+                    <th>ایمیل</th>
+                    <th>پیام</th>
+                    <th>وضعیت</th>
+                    <th>نام مقاله</th>
+                    <th>ناریخ ثبت</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var comment in Model.Comments)
+                {
+                    <tr>
+                        <td>@comment.Id</td>
+                        <td>@comment.Name</td>
+                        <td>@comment.Email</td>
+                        <td>@comment.Message</td>
+                        
+                        <td>
+                            @if (comment.Status == Statuses.New)
+                            {
+                                <i class="fa fa-eye fa-2x text-info"></i>
+                            }
+                            @if (comment.Status == Statuses.Canceled)
+                            {
+                                <i class="fa fa-check fa-2x text-danger"></i>
+                            }
+                            @if(comment.Status==Statuses.Confirmed)
+                            {
+                                <i class="fa fa-check fa-2x text-success"></i>
+                            }
+                        </td>
+                        <td>@comment.Article</td>
+                        <td>@comment.CreationDate</td>
+                        <td>
+                           
+
+                            @if (comment.Status == Statuses.New)
+                            {
+                                <form method="post" asp-page-handler="Confirm" class="float-left">
+                                    <button class="btn badge-success">تایید</button>
+                                    <input type="hidden" name="Id" value="@comment.Id" />
+                                </form>
+                                <form method="post" asp-page-handler="Cancel" class="float-left">
+                                    <button class="btn badge-danger">رد</button>
+                                    <input type="hidden" name="Id" value="@comment.Id" />
+                                </form>
+                            }
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>

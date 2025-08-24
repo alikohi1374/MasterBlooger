@@ -9,6 +9,7 @@ namespace MB.Infrastracture.Query
    public interface IArticleQuery
    {
        List<ArticleQueryView> GetArticle();
+       ArticleQueryView GetArticle(long id);
 
    }
 }
